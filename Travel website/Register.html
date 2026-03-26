@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelio - Register</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/register.css" />
+  </head>
+  <body>
+    <div class="register-card">
+      <div class="logo-box">
+        <img src="Img/logo.png" alt="Travelio Logo" class="logo" />
+        <h2>Join the Adventure</h2>
+      </div>
+
+      <form action="index.html" method="post">
+        <div class="input-row">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+
+        <div class="input-row">
+          <input type="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="input-row">
+          <select id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <textarea
+            placeholder="Tell us about your travel style (Description)..."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="input-row">
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <div class="input-row">
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+
+        <div class="terms-box">
+          <input type="checkbox" id="terms" required />
+          <label for="terms"
+            >I agree to the <a href="#">Terms of Service</a></label
+          >
+        </div>
+
+        <button type="submit" class="signup-btn">Create Account</button>
+      </form>
+
+      <div class="login-redirect">
+        <p>Already have an account? <a href="login.html">Sign In</a></p>
+      </div>
+    </div>
+  </body>
+</html>

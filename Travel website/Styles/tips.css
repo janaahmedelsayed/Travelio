@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body { background-color: #fcfdfd; overflow-x: hidden; }
+
+/* Iframe styles */
+.nav-iframe { width: 100%; height: 72px; border: none; position: sticky; top: 0; z-index: 1000; }
+@media (max-width: 850px) { .nav-iframe { height: 120px; } }
+.footer-iframe { width: 100%; height: 60px; border: none; display: block; }
+
+/* Tips Page */
+.tips-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; min-height: calc(100vh - 132px); }
+.page-title { text-align: center; color: #2c3e50; font-size: 2.5rem; margin-bottom: 40px; }
+
+.tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.tip-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+.tip-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+.tip-img { height: 200px; background-size: cover; background-position: center; }
+.tip-content { padding: 25px; }
+.tip-content h3 { color: #48c3af; margin-bottom: 15px; font-size: 1.3rem; }
+.tip-content p { color: #666; font-size: 0.95rem; line-height: 1.6; }

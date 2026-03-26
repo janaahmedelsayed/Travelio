@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body { background-color: #fcfdfd; overflow-x: hidden; }
+
+/* Iframe styles */
+.nav-iframe { width: 100%; height: 72px; border: none; position: sticky; top: 0; z-index: 1000; }
+@media (max-width: 850px) { .nav-iframe { height: 120px; } }
+.footer-iframe { width: 100%; height: 60px; border: none; display: block; }
+
+/* Rate Page */
+.rate-container { min-height: calc(100vh - 132px); display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+.rate-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); width: 100%; max-width: 500px; text-align: center; }
+.rate-card h1 { color: #2c3e50; font-size: 2rem; margin-bottom: 10px; }
+.stars { font-size: 2rem; margin-bottom: 30px; letter-spacing: 5px; }
+
+.radio-group { display: flex; justify-content: space-around; margin-bottom: 30px; flex-wrap: wrap; gap: 10px; }
+.radio-option { display: flex; align-items: center; gap: 8px; cursor: pointer; color: #555; font-weight: 500; font-size: 1rem; }
+.radio-option input { display: none; }
+.custom-radio { width: 20px; height: 20px; border: 2px solid #ddd; border-radius: 50%; display: inline-block; position: relative; transition: 0.2s; }
+.radio-option input:checked + .custom-radio { border-color: #48c3af; background: #48c3af; }
+.radio-option input:checked + .custom-radio::after { content: ''; width: 8px; height: 8px; background: white; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.input-group { text-align: left; margin-bottom: 25px; }
+.input-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #555; font-size: 0.9rem; }
+.input-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 10px; font-size: 1rem; transition: 0.3s; outline: none; resize: vertical; }
+.input-group textarea:focus { border-color: #48c3af; box-shadow: 0 0 0 3px rgba(72, 195, 175, 0.2); }
+
+.btn-submit { width: 100%; padding: 15px; background: #48c3af; color: white; border: none; border-radius: 10px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: 0.3s; }
+.btn-submit:hover { background: #3ba896; }

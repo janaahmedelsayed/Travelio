@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelio - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fcfdfd;
+      overflow-x: hidden;
+    }
+
+    /* Iframe styles */
+
+    .nav-iframe {
+      width: 100%;
+      height: 72px;
+      border: none;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    @media (max-width: 850px) {
+      .nav-iframe {
+        height: 120px;
+      }
+    }
+
+    .footer-iframe {
+      width: 100%;
+      height: 60px;
+      border: none;
+      display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("Img/Home.jfif");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+
+      min-height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .highlight {
+      color: #48c3af;
+    }
+
+    /*  About Section */
+    .about-section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h2 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about-badge {
+      display: inline-block;
+      background: rgba(255, 142, 66, 0.1);
+      color: #ff8e42;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .about-visual {
+      flex: 1;
+      height: 300px;
+      background-image: url("Img/About.jfif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+
+      display: block;
+    }
+
+    /* Feature Section */
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .features h2 {
+      display: inline-block;
+      background: rgba(255, 142, 66, 0.1);
+      color: #ff8e42;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 2.3 rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .feature-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .f-card {
+      width: 250px;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 20px;
+    }
+
+    .icon-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .f-card h3 {
+      color: #48c3af;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--  Navbar -->
+  <iframe src="navbar.html" class="nav-iframe"></iframe>
+
+  <header class="hero">
+    <h1>Travel Beyond <span class="highlight">Limits</span></h1>
+    <p>Your portal to the world's most hidden gems.</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-visual"></div>
+    <div class="about-content">
+      <span class="about-badge">About Us</span>
+      <h2>We Create Memories, Not Just Trips</h2>
+      <p>
+        Travelio was founded on the belief that travel should be accessible,
+        seamless, and deeply personal. We don't just book flights; we curate
+        experiences that stay with you forever.
+      </p>
+      <p>
+        Our team of experts scours the globe to find destinations that offer
+        both luxury and authentic local culture.
+      </p>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Our Services</h2>
+    <div class="feature-grid">
+      <div class="f-card">
+        <div class="icon-title">
+          <i class="fa-solid fa-plane" style="font-weight: 600; font-size: 27px; color: #ff8e42"></i>
+          <h3>Safe Travel</h3>
+        </div>
+        <p>Verified stays and 24/7 support.</p>
+      </div>
+      <div class="f-card">
+        <div class="icon-title">
+          <i class="fa-solid fa-money-bills" style="font-weight: 600; font-size: 27px; color: #ff8e42"></i>
+          <h3>Best Prices</h3>
+        </div>
+        <p>Exclusive deals with top airlines.</p>
+      </div>
+      <div class="f-card">
+        <div class="icon-title">
+          <i class="fa-solid fa-earth-africa" style="font-weight: 600; font-size: 27px; color: #ff8e42"></i>
+          <h3>Easy Booking</h3>
+        </div>
+        <p>Sign up and fly in minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  Footer -->
+  <iframe src="footer.html" class="footer-iframe" scrolling="no"></iframe>
+</body>
+
+</html>

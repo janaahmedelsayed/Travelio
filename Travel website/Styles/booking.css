@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+body { background-color: #fcfdfd; overflow-x: hidden; }
+
+/* Iframe styles */
+.nav-iframe { width: 100%; height: 72px; border: none; position: sticky; top: 0; z-index: 1000; }
+@media (max-width: 850px) { .nav-iframe { height: 120px; } }
+.footer-iframe { width: 100%; height: 60px; border: none; display: block; }
+
+/* Booking Page */
+.booking-container { min-height: calc(100vh - 132px); display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+.booking-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); width: 100%; max-width: 500px; text-align: center; }
+.booking-card h1 { color: #2c3e50; font-size: 2rem; margin-bottom: 10px; }
+.subtitle { color: #666; margin-bottom: 30px; font-size: 0.95rem; }
+
+.input-group { text-align: left; margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #555; font-size: 0.9rem; }
+.input-group input { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 10px; font-size: 1rem; transition: 0.3s; outline: none; }
+.input-group input:focus { border-color: #48c3af; box-shadow: 0 0 0 3px rgba(72, 195, 175, 0.2); }
+
+.btn-submit { width: 100%; padding: 15px; background: #48c3af; color: white; border: none; border-radius: 10px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+.btn-submit:hover { background: #3ba896; }

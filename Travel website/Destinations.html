@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelio - Destinations</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/destination.css" />
+  </head>
+  <body>
+    <!--  Navbar -->
+    <iframe src="navbar.html" class="nav-iframe" scrolling="no"></iframe>
+
+    <header class="dest-hero">
+      <h1>Where do you want to <span class="highlight">Go?</span></h1>
+      <p>Explore our hand-picked destinations around the globe.</p>
+    </header>
+
+    <section class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <input type="text" placeholder="Search destination..." />
+        <select>
+          <option>All countries</option>
+          <option>paris</option>
+          <option>Egypt</option>
+          <option>Rome</option>
+          <option>Jaban</option>
+          <option>America</option>
+          <option>Bali</option>
+        </select>
+        <button class="filter-btn">Search</button>
+      </div>
+
+      <!-- Destination Grid -->
+      <div class="dest-grid">
+        <!-- Card 1 -->
+        <div class="dest-card">
+          <div class="dest-img" style="background-image: url(Img/paris.jfif)">
+            <span class="price-tag">$1,200</span>
+          </div>
+          <div class="dest-info">
+            <h3>Paris, France</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Western Europe</p>
+            <a href="DestinationsDetails.html" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="dest-card">
+          <div class="dest-img" style="background-image: url(Img/bali.jfif)">
+            <span class="price-tag">$850</span>
+          </div>
+          <div class="dest-info">
+            <h3>Bali, Indonesia</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Southeast Asia</p>
+            <a href="DestinationsDetails.html" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="dest-card">
+          <div class="dest-img" style="background-image: url(Img/rome.jfif)">
+            <span class="price-tag">$1,100</span>
+          </div>
+          <div class="dest-info">
+            <h3>Rome, Italy</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Southern Europe</p>
+            <a href="DestinationsDetails.html" class="view-btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="dest-card">
+          <div class="dest-img" style="background-image: url(Img/egypt.jfif)">
+            <span class="price-tag">$1,500</span>
+          </div>
+          <div class="dest-info">
+            <h3>cairo, Egypt</h3>
+            <p><i class="fa-solid fa-location-dot"></i>Africa</p>
+            <a href="DestinationsDetails.html" class="view-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shared Footer -->
+    <iframe src="footer.html" class="footer-iframe" scrolling="no"></iframe>
+  </body>
+</html>

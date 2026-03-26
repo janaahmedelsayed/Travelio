@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #fcfdfd;
+  overflow-x: hidden;
+}
+
+/* Iframe styles */
+.nav-iframe {
+  width: 100%;
+  height: 72px;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+@media (max-width: 850px) {
+  .nav-iframe {
+    height: 120px;
+  }
+}
+.footer-iframe {
+  width: 100%;
+  height: 60px;
+  border: none;
+  display: block;
+}
+
+/* Page Content */
+.tours-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: calc(100vh - 132px);
+}
+.page-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.section-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin: 50px 0 20px;
+  text-align: center;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.tour-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.tour-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.tour-info {
+  padding: 25px;
+  text-align: center;
+}
+.tour-info h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.tour-info p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+.tour-info .price {
+  color: #48c3af;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tour-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-view {
+  flex: 1;
+  background: transparent;
+  border: 1.5px solid #48c3af;
+  color: #48c3af;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-book-now {
+  flex: 1;
+  background: #ff8e42;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: #48c3af;
+  color: white;
+}
+.btn-book-now:hover {
+  background: #e67e3a;
+  transform: scale(1.05);
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.tours-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+.tours-table th,
+.tours-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.tours-table th {
+  background-color: #48c3af;
+  color: white;
+  font-weight: 600;
+}
+.tours-table tr:hover {
+  background-color: #f9f9f9;
+}
+.tours-table td {
+  color: #555;
+}

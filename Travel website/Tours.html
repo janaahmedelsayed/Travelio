@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelio - Tours</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/tours.css" />
+  </head>
+  <body>
+    <!--  Navbar -->
+    <iframe src="navbar.html" class="nav-iframe"></iframe>
+
+    <div class="tours-container">
+      <h1 class="page-title">Explore Our Tours</h1>
+
+      <div class="cards-grid">
+        <div class="tour-card">
+          <div
+            class="tour-img"
+            style="background-image: url(Img/paris.jfif)"
+          ></div>
+          <div class="tour-info">
+            <h3>Paris Gateway</h3>
+            <p><i class="fa-regular fa-clock"></i> 5 Days</p>
+            <p class="price">$1,200</p>
+            <div class="tour-actions">
+              <a href="ToursDetails.html" class="btn-view">View Details</a>
+              <a href="Booking.html" class="btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div
+            class="tour-img"
+            style="background-image: url(Img/bali.jfif)"
+          ></div>
+          <div class="tour-info">
+            <h3>Maldives Relax</h3>
+            <p><i class="fa-regular fa-clock"></i> 7 Days</p>
+            <p class="price">$2,500</p>
+            <div class="tour-actions">
+              <a href="ToursDetails.html" class="btn-view">View Details</a>
+              <a href="Booking.html" class="btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div
+            class="tour-img"
+            style="background-image: url(Img/rome.jfif)"
+          ></div>
+          <div class="tour-info">
+            <h3>rome Adventure</h3>
+            <p><i class="fa-regular fa-clock"></i> 10 Days</p>
+            <p class="price">$3,100</p>
+            <div class="tour-actions">
+              <a href="ToursDetails.html" class="btn-view">View Details</a>
+              <a href="Booking.html" class="btn-book-now">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Upcoming Departures</h2>
+      <div class="table-container">
+        <table class="tours-table">
+          <thead>
+            <tr>
+              <th>Tour Name</th>
+              <th>Date</th>
+              <th>Available Spots</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paris Gateway</td>
+              <td>Oct 15, 2026</td>
+              <td>12</td>
+              <td>$1,200</td>
+            </tr>
+            <tr>
+              <td>Maldives Relax</td>
+              <td>Nov 02, 2026</td>
+              <td>4</td>
+              <td>$2,500</td>
+            </tr>
+            <tr>
+              <td>rome Adventure</td>
+              <td>Dec 10, 2026</td>
+              <td>8</td>
+              <td>$3,100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--  Footer -->
+    <iframe src="footer.html" class="footer-iframe" scrolling="no"></iframe>
+  </body>
+</html>

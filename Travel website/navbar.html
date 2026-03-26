@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <base target="_top" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: white;
+        overflow: hidden;
+      }
+
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+        border-bottom: 1px solid #eee;
+        background: white;
+      }
+
+      .nav-logo {
+        width: 100px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #555;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #48c3af;
+      }
+
+      .nav-auth {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .btn-signin {
+        text-decoration: none;
+        color: #48c3af;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .btn-signup {
+        text-decoration: none;
+        background: #48c3af;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 850px) {
+        .navbar {
+          padding: 10px 20px;
+        }
+
+        .nav-links {
+          order: 3;
+          width: 100%;
+          justify-content: center;
+          margin-top: 10px;
+          gap: 15px;
+        }
+
+        .nav-links a {
+          font-size: 0.8rem;
+        }
+
+        .nav-logo {
+          order: 1;
+          width: 80px;
+        }
+        .nav-auth {
+          order: 2;
+        }
+
+        .btn-signup {
+          padding: 6px 12px;
+          font-size: 0.8rem;
+        }
+        .btn-signin {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="Img/logo.png" class="nav-logo" />
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Destinations.html">Destinations</a></li>
+        <li><a href="Tours.html">Tours</a></li>
+        <li><a href="Tips.html">Tips</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Rate.html">Rate</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="Login.html" class="btn-signin">Sign in</a>
+        <a href="register.html" class="btn-signup">Join Now</a>
+      </div>
+    </nav>
+  </body>
+</html>
